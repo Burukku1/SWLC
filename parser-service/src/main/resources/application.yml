@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/parser
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+
+
+
+app:
+  urls:
+    realt:
+      basic: "https://realt.by"
+      rent:
+        for-long: "https://realt.by/belarus/rent/flat-for-long/"
+        for-day: "https://realt.by/belarus/rent/flat-for-day/"
+      sales: "https://realt.by/belarus/sale/flats/"
